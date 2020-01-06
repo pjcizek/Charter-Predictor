@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>Charter Predictor - Understand your educational options</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/starter-template/">
+    <!-- Load jquery -->    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- Load popper --> 
+    <!-- This has to be before bootstrap if you have dropdowns -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+            crossorigin="anonymous"></script>
+
+
+    <!--  Load bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/starter-template.css" rel="stylesheet">
+
+<style>
+body{background-image: url("/static/school2.jpg"); background-repeat: no-repeat, repeat;
+background-size: cover;  background-position: bottom;  }
+
+#bannerimage {
+  background-size: cover; 
+  background-image: url("/static/school2.jpg"); 
+  height: 110px;
+  background-color: purple;
+  background-position: left;
+}
+
+#example1 {
+ 
+  padding: 15px;
+  background: WhiteSmoke;
+  background-clip: padding-box;  
+}
+
+</style>
+</head>
+
+  </head>
+
+  <body>
+
+<div id="bannerimage"></div>
+
+<div id="example1">
+    
+<br><br>
+
+<div class="container">
+    <div class="starter-template">
+      <h2>Charter Predictor Analysis</h2>
+      <h2>"{{movie_title}}"</h2>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+
+
+     </div><!-- /.container -->
+
+
+    <div class="container">
+      <div class="starter-template">
+        <h3>Result:</h3>
+	<p class="lead"><br>
+	  <font size="10" color="black">We estimate that {{movie_title}} is a </font>
+	  <font size="10" color="blue"> {{the_result}} </font> <font size="10" color="black">  school choice, 
+	   with a likelihood of </font> <font size="10" color="blue"> {{viability}} </font>
+          <font size="10" color="black"> percent of continuing operations for three years after opening. </font> 
+	</p>
+      </div>
+
+
+	<p class="lead"><br>
+	  <font size="5" color="black">In general, new charter schools in California with greater levels of enrollment are more robust to closure. Here is how {{movie_title}} 
+	   compares to other new charter schools in California in terms of enrollment, including {{movie_title}}'s five nearest neighbor new charter schools. </font>  
+	</p>
+	
+	
+
+	<table style="width:100%">
+
+
+ 	 <tr>
+	  <th> </th>
+    	  <th>Enrollment</th>
+	  <th>Risk Level</th>
+          <th>Likelihood of remaining open</th>
+          <th>Distance from {{movie_title}} (miles) </th>
+  	</tr>
+  	
+         <tr>
+	 <td>{{movie_title}}</td>
+    	 <td>{{se}}</td>
+	<td>{{the_result}}</td>
+        <td>{{viability}}</td>
+  	</tr>
+
+  	<tr>
+	<td>Average for new California charter schools</td>
+    	 <td>{{ae}}</td>
+  	</tr>
+
+
+      
+        <tr style="border-bottom:1px solid black">
+        <td colspan="100%"></td>
+        </tr>
+
+	
+  	<tr>
+	<td>{{nn1name}}</td>
+        <td>{{nn1school_enrollment}}</td>
+    	<td>{{nn1risk_level}}</td>
+        <td>{{nn1probability}}</td>
+        <td>{{nn1distance}}</td>
+       
+        </tr>
+
+
+  	<tr>
+        <td>{{nn2name}}</td>
+        <td>{{nn2school_enrollment}}</td>
+    	<td>{{nn2risk_level}}</td>
+        <td>{{nn2probability}}</td>
+        <td>{{nn2distance}}</td>
+  	</tr>
+
+
+  	<tr>
+	<td>{{nn3name}}</td>
+        <td>{{nn3school_enrollment}}</td>
+    	<td>{{nn3risk_level}}</td>
+        <td>{{nn3probability}}</td>
+        <td>{{nn3distance}}</td>
+  	</tr>
+
+
+
+  	<tr>
+	<td>{{nn4name}}</td>
+        <td>{{nn4school_enrollment}}</td>
+    	<td>{{nn4risk_level}}</td>
+        <td>{{nn4probability}}</td>
+        <td>{{nn4distance}}</td>
+  	</tr>
+
+        <tr>
+	<td>{{nn5name}}</td>
+        <td>{{nn5school_enrollment}}</td>
+    	<td>{{nn5risk_level}}</td>
+        <td>{{nn5probability}}</td>
+        <td>{{nn5distance}}</td>
+  	</tr>
+
+	</table>
+       
+        
+
+       <p class="lead"><br>
+	  <font size="5" color="black">Note: Charter Predictor also considers other factors not listed above when calculating likelihood of closure.</font>  
+	</p>      
+
+
+        
+
+	<div id="googleMap" style="width:50%;height:300px;"></div>
+
+<script>
+function myMap() {
+
+latLng = new google.maps.LatLng({{lat0}},{{long0}})
+
+latLng_nn1 = new google.maps.LatLng({{nn1lat}},{{nn1long}})
+latLng_nn2 = new google.maps.LatLng({{nn2lat}},{{nn2long}})
+latLng_nn3 = new google.maps.LatLng({{nn3lat}},{{nn3long}})
+latLng_nn4 = new google.maps.LatLng({{nn4lat}},{{nn4long}})
+latLng_nn5 = new google.maps.LatLng({{nn5lat}},{{nn5long}})
+
+var mapProp= {
+  center:latLng,
+  zoom:15,
+};
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+
+var marker = new google.maps.Marker({position:latLng, visible: true,  title: 'School'
+    });
+var infowindow = new google.maps.InfoWindow({ content: '{{movie_title}}' });
+
+var marker_nn1 = new google.maps.Marker({position:latLng_nn1, visible: true,  title: '{{nn1name}}'
+    });
+var infowindow_nn1 = new google.maps.InfoWindow({ content: '{{nn1name}}' });
+
+var marker_nn2 = new google.maps.Marker({position:latLng_nn2, visible: true,  title: '{{nn2name}}'
+    });
+var infowindow_nn2 = new google.maps.InfoWindow({ content: '{{nn2name}}' });
+
+var marker_nn3 = new google.maps.Marker({position:latLng_nn3, visible: true,  title: '{{nn3name}}'
+    });
+var infowindow_nn3 = new google.maps.InfoWindow({ content: '{{nn3name}}' });
+
+var marker_nn4 = new google.maps.Marker({position:latLng_nn4, visible: true,  title: '{{nn4name}}'
+    });
+var infowindow_nn4 = new google.maps.InfoWindow({ content: '{{nn4name}}' });
+
+var marker_nn5 = new google.maps.Marker({position:latLng_nn5, visible: true,  title: '{{nn5name}}'
+    });
+var infowindow_nn5 = new google.maps.InfoWindow({ content: '{{nn5name}}' });
+
+
+
+marker_nn1.setMap(map);
+infowindow_nn1.open(map,marker_nn1);
+
+marker_nn2.setMap(map);
+infowindow_nn2.open(map,marker_nn2);
+
+marker_nn3.setMap(map);
+infowindow_nn3.open(map,marker_nn3);
+
+marker_nn4.setMap(map);
+infowindow_nn4.open(map,marker_nn4);
+
+marker_nn5.setMap(map);
+infowindow_nn5.open(map,marker_nn5);
+
+
+marker.setMap(map);
+infowindow.open(map,marker);
+
+
+
+}
+
+
+</script>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=XXX&callback=myMap"></script>
+
+
+
+
+
+      <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+      <script src="static/js/bootstrap.min.js"></script>
+
+
+     </div><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    -->
+  </body>
+</html>
+

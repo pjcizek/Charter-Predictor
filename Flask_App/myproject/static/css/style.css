@@ -1,0 +1,23 @@
+h1 {
+    color: white;
+    font-variant-caps: all-small-caps;
+    font-size: 46px;
+}
+
+h2 {
+  color: yellow;
+  font-size: 38px;
+}
+
+p {
+  color: blue;
+  font-size: 50px;
+}
+
+
+
+.jumbotron{
+ background-image: url(‘/static/school_photo.jpg’);
+ background-size: cover;
+ background-repeat: no-repeat;
+}
