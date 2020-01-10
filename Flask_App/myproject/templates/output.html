@@ -7,7 +7,7 @@
     <meta name="author" content="">
     
 
-    <title>Charter Predictor - Understand your educational options</title>
+    <title>CharterPredictor - Understand your educational options</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/starter-template/">
     <!-- Load jquery -->    
@@ -67,8 +67,8 @@ background-size: cover;  background-position: bottom;  }
 
 <div class="container">
     <div class="starter-template">
-      <h2>Charter Predictor Analysis</h2>
-      <h2>"{{movie_title}}"</h2>
+      <h2>CharterPredictor Analysis</h2>
+      <h2>"{{title}}"</h2>
     </div>
     
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
@@ -82,7 +82,7 @@ background-size: cover;  background-position: bottom;  }
       <div class="starter-template">
         <h3>Result:</h3>
 	<p class="lead"><br>
-	  <font size="10" color="black">We estimate that {{movie_title}} is a </font>
+	  <font size="10" color="black">We estimate that {{title}} is a </font>
 	  <font size="10" color="blue"> {{the_result}} </font> <font size="10" color="black">  school choice, 
 	   with a likelihood of </font> <font size="10" color="blue"> {{viability}} </font>
           <font size="10" color="black"> percent of continuing operations for three years after opening. </font> 
@@ -91,8 +91,8 @@ background-size: cover;  background-position: bottom;  }
 
 
 	<p class="lead"><br>
-	  <font size="5" color="black">In general, new charter schools in California with greater levels of enrollment are more robust to closure. Here is how {{movie_title}} 
-	   compares to other new charter schools in California in terms of enrollment, including {{movie_title}}'s five nearest neighbor new charter schools. </font>  
+	  <font size="5" color="black">In general, new charter schools in California with greater levels of enrollment are more robust to closure. Here is how {{title}} 
+	   compares to other new charter schools in California in terms of enrollment, including {{title}}'s five nearest neighbor new charter schools. </font>  
 	</p>
 	
 	
@@ -105,11 +105,11 @@ background-size: cover;  background-position: bottom;  }
     	  <th>Enrollment</th>
 	  <th>Risk Level</th>
           <th>Likelihood of remaining open (percent) </th>
-          <th>Distance from {{movie_title}} (miles) </th>
+          <th>Distance from {{title}} (miles) </th>
   	</tr>
   	
          <tr>
-	 <td>{{movie_title}}</td>
+	 <td>{{title}}</td>
     	 <td>{{se}}</td>
 	<td>{{the_result}}</td>
         <td>{{viability}}</td>
@@ -177,7 +177,7 @@ background-size: cover;  background-position: bottom;  }
         
 
        <p class="lead"><br>
-	  <font size="5" color="black">Note: Charter Predictor also considers other factors not listed above when calculating likelihood of closure.</font>  
+	  <font size="5" color="black">Note: CharterPredictor also considers other factors not listed above when calculating likelihood of closure.</font>  
 	</p>      
 
 
@@ -206,7 +206,7 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
 var marker = new google.maps.Marker({position:latLng, visible: true,  title: 'School'
     });
-var infowindow = new google.maps.InfoWindow({ content: '{{movie_title}}' });
+var infowindow = new google.maps.InfoWindow({ content: '{{title}}' });
 
 var marker_nn1 = new google.maps.Marker({position:latLng_nn1, visible: true,  title: '{{nn1name}}'
     });
@@ -256,7 +256,7 @@ infowindow.open(map,marker);
 
 </script>
 </div>
-<script src="https://maps.googleapis.com/maps/api/js?key=xxx=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=XXX&callback=myMap"></script>
 
 
 
