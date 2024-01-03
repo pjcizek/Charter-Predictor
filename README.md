@@ -7,5 +7,5 @@ and thus the constructed data set must be used to to re-create the analysis.
 
 
 The Flask_App folder contains all the folders for running CharterPredictor. A Google Maps API key used to create a map depicting 
-schools' locations is not included. 
+schools' locations is not included. Please send any questions to pjcizek@gmail.com.
 
